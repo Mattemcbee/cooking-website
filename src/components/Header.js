@@ -5,42 +5,49 @@ import {
   Collapse,
   NavbarToggler,
   Nav,
-  NavItem
+  NavItem,
+  Container
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
-import NucampLogo from "../app/assets/img/chef.png";
+import hatLogo from "../app/assets/img/hatLogo.jpg";
+import LoginForm from "./LoginForm";
+
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <Navbar dark color="#DDA15E" sticky="top" expand="md">
       <NavbarBrand className="ms-5" href="/">
-        <img src={NucampLogo} alt="nucamp logo" className="float-start" />
+        <img src={hatLogo} alt="nucamp logo" className="float-start" />
         <h1 className="mt-1">Get In My Pantry</h1>
       </NavbarBrand>
       <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
       <Collapse isOpen={menuOpen} navbar>
-        <Nav className="ms-auto" navbar>
+        <Nav className="ms-auto iconColor " navbar  >
+          
           <NavItem>
-            <NavLink className="nav-link" to="/">
-              <i className="fa fa-home fa-lg" /> Home
+            <NavLink className="nav-link iconColor" to="/">
+              <i className="fa fa-home fa-lg iconColor" /> Home
             </NavLink>
           </NavItem>
-          <NavItem>
-            <NavLink className="nav-link" to="/directory">
+          {/* <NavItem>
+            <NavLink className="nav-link" to="/meal">
               <i className="fa fa-list fa-lg" /> Directory
             </NavLink>
-          </NavItem>
+          </NavItem> */}
           {/* <NavItem>
             <NavLink className="nav-link" to="/about">
               <i className="fa fa-info fa-lg" /> About
             </NavLink>
+          </NavItem> */}
+          <NavItem>
+            <NavLink className="nav-link" to="/addrecipe">
+              <i className="fa fa-list fa-lg iconColor" /> Add Recipe
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link" to="/contact">
-              <i className="fa fa-address-card fa-lg" /> Contact
-            </NavLink>
-          </NavItem> */}
+            <LoginForm />
+          </NavItem>
         </Nav>
       </Collapse>
     </Navbar>

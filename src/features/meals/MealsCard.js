@@ -1,19 +1,33 @@
-import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
+import { Card, CardBody, CardImg, CardText, CardImgOverlay, CardTitle, Col, Row, Container } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-const MealCard = ({ recipe }) => {
-    const { id, image, name } = recipe;
+const MealCard = ({ meal }) => {
+    const { id, image, name, time, level, calories } = meal;
     return (
         <Link to={`${id}`}>
-            <Card>
-                <CardImg
+            <Card className='cardStyle cardBottomSpace'>
+                <CardImg className='cardStyle'
                     width='100%'
                     src={image}
                     alt={name}
                 />
-                <CardImgOverlay>
+                <CardBody className='cardStyle'>
                     <CardTitle>{name}</CardTitle>
-                </CardImgOverlay>
+                    <Container>
+                        <Row>
+                            <Col xs='4'>
+                                <CardText>Time: {time} minutes</CardText>
+                            </Col>
+                            <Col xs='4'>
+                                <CardText>Difficulty: {level}</CardText>
+                            </Col>
+                            <Col xs='4'>
+                                <CardText>{calories} Calories</CardText>
+                            </Col>
+                        </Row>
+                    </Container>
+
+                </CardBody>
             </Card>
         </Link>
     );

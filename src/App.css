@@ -5,8 +5,10 @@ body {
 h1,
 h2,
 h3,
-.card-body > .card-title {
+.card-body>.card-title {
     font-family: 'Helvetica';
+    
+
 }
 
 .card-title {
@@ -14,8 +16,92 @@ h3,
     font-size: 1.25rem;
 }
 
+.cardStyle {
+    background-color: #606c38;
+    text-decoration: none;
+    color: #fefae0;
+    margin-left: 0;
+}
+
+.iconColor {
+    color:#fefae0;
+}
+
+.cardBottomSpace {
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+
+}
+.cardRecipeStyle {
+    background-color: #fefae0;
+    text-decoration: none;
+    color: #606c38;
+
+}
+.selectorStyle {
+    background-color: #DDA15E;
+    text-decoration: none;
+    color: #fefae0;
+    border-radius: 12px;
+    /* width:1vw; */
+
+}
+
+.formTextStyle {
+ 
+    color: #fefae0;
+    vertical-align: middle;
+
+
+}
+
+.recipeTop {
+    background-color: #606c38;
+}
+
+.recipeButtonStyle {
+    color: #606c38;
+    background-color: #606c38;
+
+}
+
+.recipeFormStyle {
+    border: 2px solid #fefae0;
+    background-color: #a1cebe;
+    border-radius: 4px;
+    width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+
+    color: #fefae0;
+
+
+}
+
 h2 {
-    color: #3046c5;
+    color: #fefae0;
+    font-size: 22vw;
+}
+h1 {
+    color: #fefae0;
+    text-align: center;
+    margin:0;
+    font-size: 200px;
+    width: 100%;
+    left: 0;
+    right: 0;
+
+}
+.loginButton {
+    
+}
+
+.homeBackground {
+    background-color: #a1cebe;
+}
+.recipeBackground {
+    background-color: #fefae0;
 }
 
 .card-img-overlay .card-title {
@@ -36,7 +122,7 @@ h2 {
 }
 
 .navbar-brand {
-    max-width: 4rem;
+    max-width: 400px;
     margin-right: 2rem;
 }
 
@@ -48,11 +134,12 @@ h2 {
 }
 
 .navbar-dark {
-    background-color: #DDA15E;
+    background-color: #a1cebe;
     //background-image: linear-gradient(to right, #5637dd, #3046c5, #510e5a);
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     min-height: 8rem;
 }
+
 
 .page-enter {
     opacity: 0;
