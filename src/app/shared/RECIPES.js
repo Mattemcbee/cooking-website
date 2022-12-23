@@ -9,7 +9,7 @@ export const RECIPES = [
         time: 45,
         level: 'medium',
         recipeOut: ['Put in oven.', 'Salt it.', 'Add butter'],
-        ingredients: ['chicken'],
+        ingredients: ['bacon'],
         calories: 1000,
         pantry: true
     },

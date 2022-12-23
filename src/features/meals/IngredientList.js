@@ -8,20 +8,25 @@ const IngredientListAll = () => {
     const allIngredients = selectAllIngredients();
     // const items = [selectAllRecipies(), selectMealByIngredient()];
     // const meals = filterObj();
-    const handleSubmit = (values) => {
-        console.log('form values:', values);
-    };
+    // const handleSubmit = (values) => {
+    //     console.log('form values:', values);
+    // };
 
     return (
         <>
+        
             <Row className='ms-auto' >
-                {allIngredients.map((list) => {
-                    return (
-                        <Col md='12' className='' key={list.id}>
-                            <IngredientSelection list={list} />
+                {/* {allIngredients.map((list) => {
+                    return ( */}
+                        {/* <Col md='12' className='' key={list.id}> */}
+                        <Col md='12' className='' >
+
+                            {/* <IngredientSelection list={list} /> */}
+                            <IngredientSelection  />
+
                         </Col>
-                    );
-                })}
+                    {/* );
+                })} */}
             </Row>
         {/* // <Row className='ms-auto'>
         //     {items.map((meal, idx) => { */}
@@ -34,13 +39,14 @@ const IngredientListAll = () => {
                 //         );
                 //     })}
                 // </Row> */}
-                <Row >
+                {/* <Row >
                     <Col md={{ size: 10, offset: 2 }}>
-                        <Button onClick={handleSubmit} className='mb-2' style={{ backgroundColor: '#fefae0', color: '#787878' }} >
+                        <Button type='submit' className='mb-2' style={{ backgroundColor: '#fefae0', color: '#787878' }} >
                             Submit Recipe
                         </Button>
                     </Col>
-                </Row>
+                </Row> */}
+
                 </>
 
             );
