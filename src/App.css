@@ -83,6 +83,25 @@ h2 {
     color: #fefae0;
     font-size: 22vw;
 }
+
+.mac {
+    color: black;
+    font-size: 2vw;
+    /* vertical-align: center; */
+    margin: auto;
+}
+
+.NoDecorationCardText {
+    text-decoration: none;
+
+}
+.unstyleLink {
+    color: #fefae0;
+    text-decoration: none;
+  }
+.inline {
+    display: inline-block;
+  }
 h1 {
     color: #fefae0;
     text-align: center;

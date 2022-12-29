@@ -15,6 +15,7 @@ const MealDetailPage = () => {
             <Row>
                 <MealsDetail meal={meal} />
                 <MealsRecipe meal={meal} />
+                {/* <RecipeListFormat mealId={mealId}/> */}
               
             </Row>
         </Container>

@@ -12,8 +12,8 @@ const MealsRecipe = ({ meal }) => {
     return (
 
         <Col  xs={{size:'10', offset:'1'}} md={{size:'8', offset:'0'}} className='mt-10'>
-            <Card className='cardStyle'>
-                <CardBody className='cardStyle text-center'>
+            <Card className='cardStyle NoDecorationCardText'>
+                <CardBody className='cardStyle NoDecorationCardText text-center'>
                     <Container>
                         <Row>
                             <Col xs='4'>

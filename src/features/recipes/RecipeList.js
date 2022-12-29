@@ -1,10 +1,14 @@
 import { Col } from 'reactstrap';
 // import { RECIPIES } from '../../app/shared/RECIPIES';
 import RecipeDetails from './Recipe';
+import { useSelector } from 'react-redux';
+import {selecRecipeByRecipeId } from './AddRecipeSlice'
 import { selectRecipeByMealID } from './RecipeSlice';
 
 export const RecipeListFormat = ({ mealId }) => {
-    const meals = selectRecipeByMealID(mealId);
+    // const meals = useSelector(selectRecipeByMealID(mealId));
+    const meals = useSelector(selecRecipeByRecipeId(mealId));
+
 
     if (meals && meals.length > 0) {
         return (

@@ -6,7 +6,7 @@ const MealsDetail= ({meal}) => {
 
     return ( 
         <Col md={{size:'4', offset:'0'}} xs={{size:'10', offset:'1'}}>
-            <Card className='cardStyle'>
+            <Card className='cardStyle '>
                 <h2 className='cardStyle'>{name}</h2>
                 <CardImg top src={image} alt={name} />
                 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const MealCard = ({ meal }) => {
     const { id, image, name, time, level, calories } = meal;
     return (
-        <Link to={`${id}`}>
+        <Link className='NoDecorationCardText' to={`${id}`}>
             <Card className='cardStyle cardBottomSpace'>
                 <CardImg className='cardStyle'
                     width='100%'
@@ -16,7 +16,7 @@ const MealCard = ({ meal }) => {
                     <Container>
                         <Row>
                             <Col xs='4'>
-                                <CardText>Time: {time} minutes</CardText>
+                                <CardText className='NoDecorationCardText'>Time: {time} minutes</CardText>
                             </Col>
                             <Col xs='4'>
                                 <CardText>Difficulty: {level}</CardText>

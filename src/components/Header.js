@@ -11,6 +11,7 @@ import {
 import { NavLink } from "react-router-dom";
 import hatLogo from "../app/assets/img/hatLogo.jpg";
 import LoginForm from "./LoginForm";
+import UserLoginForm from "../features/user/UserLoginForm";
 
 
 const Header = () => {
@@ -45,10 +46,12 @@ const Header = () => {
               <i className="fa fa-list fa-lg iconColor" /> Add Recipe
             </NavLink>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <LoginForm />
-          </NavItem>
+          </NavItem> */}
         </Nav>
+        <UserLoginForm />
+
       </Collapse>
     </Navbar>
   );
