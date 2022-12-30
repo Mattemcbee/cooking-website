@@ -1,49 +1,35 @@
+import { useSelector } from "react-redux";
 import { Col, Row } from "reactstrap";
-import {
-  selectFilteredRecipes,
-  selectAllRecipies,
-  selectMealByIngredient,
-  filterIngredientsByTrue,
-  filterObj,
-  filterExport,
-  selectFilteredRecepies,
-} from "./MealsSlice";
+import { selectFilteredRecipes } from "../recipes/AddRecipeSlice";
 import MealCard from "../meals/MealsCard";
-import { stringArray } from "./IngredientSelection";
+import { selectAllRecipe } from "../recipes/AddRecipeSlice";
 
 const MealsList = (props) => {
-  const meals = selectFilteredRecipes(props.filteredIngredients);
-  // const meals = selectAllRecipies();
+  const recipes = useSelector(selectAllRecipe);
 
-  const meals2 = filterIngredientsByTrue();
+  const filteredRecipes = useSelector(
+    selectFilteredRecipes(props.filteredIngredients)
+  );
 
-  // const meals2=filterExport();
-
-  // const items = [selectAllRecipies(), selectMealByIngredient()];
-  // const meals = filterObj();
-  if (meals2.length > 0) {
+  if (props.filteredIngredients?.length === 0) {
     return (
-      <Row className="ms-auto">
-        {meals.map((meal) => {
-          return (
-            <Col md="6" className="" key={meal.id}>
-              <MealCard meal={meal} />
-              {/* <div>meals 2</div> */}
-            </Col>
-          );
-        })}
+      <Row className=" mac ">
+        <div>Choose Ingredients To See Recipe</div>
       </Row>
     );
   }
 
-  if (meals2.length <= 0) {
-    return (
-        <Row className=" mac ">
-            <div>Choose Ingredients To See Recipe</div>
-         
-        </Row>
-    );
-  }
+  return (
+    <Row className="ms-auto">
+      {filteredRecipes.map((meal) => {
+        return (
+          <Col md="6" className="" key={meal.id}>
+            <MealCard meal={meal} />
+          </Col>
+        );
+      })}
+    </Row>
+  );
 };
 
 export default MealsList;
