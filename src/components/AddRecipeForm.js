@@ -30,7 +30,7 @@ const AddRecipeForm = () => {
             recipeOut: values.recipeHowTo,
             id: 0,
             image: logo,
-            calories: 1000,
+            calories: values.caloriesCount,
             pantry: true
 
         }
@@ -54,6 +54,7 @@ const AddRecipeForm = () => {
                     ingredientList: '',
                     difficulty: 'Easy',
                     recipeHowTo: '',
+                    caloriesCount:''
                 }}
                 onSubmit={handleSubmit}
                 validate={validateAddRecipeForm}
@@ -84,11 +85,23 @@ const AddRecipeForm = () => {
                             </ErrorMessage>
                         </Col>
                     </FormGroup>
+                    
                     <FormGroup row>
+                    <Label htmlFor='difficulty' md='2'>
+                            Calories
+                        </Label>
+                        <Col md='2'>
+                        <Field name='caloriesCount' placeholder='Calories' className='form-control' className='recipeFormStyle' />
+                            <ErrorMessage name='ingredientList'>
+                                {(msg) => <p className='text-danger'>{msg}</p>}
+                            </ErrorMessage>
+                        </Col>
+
+                        
                         <Label htmlFor='difficulty' md='2'>
                             Difficulty
                         </Label>
-                        <Col md='4'>
+                        <Col md='2'>
                             <Field name='difficulty' as='select' placeholder='Select' className='form-control' className='recipeFormStyle'  >
                                 <option>Easy</option>
                                 <option>Medium</option>
@@ -99,14 +112,14 @@ const AddRecipeForm = () => {
                         <Label htmlFor='timeToCook' md='2'>
                             Time (minutes)
                         </Label>
-                        <Col md='4'>
+                        <Col md='2'>
                             <Field name='timeToCook' as='select' className='form-control' className='recipeFormStyle'  >
                                 <option>5</option>
                                 <option>10</option>
                                 <option>15</option>
                                 <option>20</option>
                                 <option>25</option>
-                                <option>30</option><option>5</option>
+                                <option>30</option>
                                 <option>35</option>
                                 <option>40</option>
                                 <option>45</option>

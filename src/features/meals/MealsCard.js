@@ -1,8 +1,9 @@
 import { Card, CardBody, CardImg, CardText, CardImgOverlay, CardTitle, Col, Row, Container } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-const MealCard = ({ meal }) => {
+const MealCard = ({ meal }) =>  {
     const { id, image, name, time, level, calories } = meal;
+    
     return (
         <Link className='NoDecorationCardText' to={`${id}`}>
             <Card className='cardStyle cardBottomSpace'>
@@ -24,6 +25,9 @@ const MealCard = ({ meal }) => {
                             <Col xs='4'>
                                 <CardText>{calories} Calories</CardText>
                             </Col>
+                            {/* <Col xs='4'>
+                                <CardText>{numberOfFiltered} num</CardText>
+                            </Col> */}
                         </Row>
                     </Container>
 

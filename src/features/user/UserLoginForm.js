@@ -10,7 +10,7 @@ import {
     Button
 } from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
-import defaultAvatar from '../../app/assets/img/ramen.jpg';
+import defaultAvatar from '../../app/assets/img/logo.png';
 import { validateUserLoginForm } from '../../utils/validateUserLoginForm';
 
 const UserLoginForm = () => {
@@ -39,6 +39,7 @@ const UserLoginForm = () => {
                             alt={'user'}
                             style={{ width: '100%', height: '100%' }}
                         />
+                        Welcome {currentUser.username}
                     </div>
                 ) : (
                     <Button

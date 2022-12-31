@@ -18,9 +18,9 @@ const HomePage = () => {
       <Row>
         <Col sm="2">
           <Container className="selectorStyle">
-            <h2 style={{ fontSize: "2vw", textAlign: "center" }}>
+            <h4 style={{ fontSize: "2vw", textAlign: "center" }}>
               Ingredients
-            </h2>
+            </h4>
             <IngredientListAll handleFilterSelection={handleFilterSelection} />
             {/* <LoginForm /> */}
           </Container>

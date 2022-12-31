@@ -14,7 +14,7 @@ export const RECIPES = [
         time: 45,
         level: 'medium',
         recipeOut: ['Pound the chicken breasts until they are 1/4-inch thick. You can use either a meat mallet or a rolling pin.', 'Combine the flour, salt, and pepper on a dinner plate. On a second plate, beat the eggs with 1 tablespoon of water. On a third plate, combine the bread crumbs and 1/2 cup grated Parmesan. Coat the chicken breasts on both sides with the flour mixture, then dip both sides into the egg mixture and dredge both sides in the bread-crumb mixture, pressing lightly. ', 'Heat 1 tablespoon of butter and 1 tablespoon of olive oil in a large saute pan and cook 2 or 3 chicken breasts on medium-low heat for 2 to 3 minutes on each side, until cooked through. Add more butter and oil and cook the rest of the chicken breasts. Toss the salad greens with Lemon Vinaigrette. Place a mound of salad on each hot chicken breast. Serve with extra grated Parmesan.'],
-        ingredients: ['cheese','chicken'],
+        ingredients: ['cheese','chicken','garlic'],
         calories: 1000,
         pantry: true
     },

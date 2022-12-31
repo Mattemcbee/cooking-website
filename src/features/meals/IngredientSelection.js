@@ -124,7 +124,7 @@ import {
             </FormGroup>
             <FormGroup className="text-center">
               <Row className="text-center">
-                <Col className="text-center" md={{ size: 10, offset: 2 }}>
+                <Col className="text-center" md={{ size: 10}}>
                   <Button
                     type="submit"
                     className="mb-2 text-center"
