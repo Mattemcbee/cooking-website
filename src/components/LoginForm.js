@@ -1,78 +1,43 @@
 import { useState } from "react";
 import { Button, Modal, ModalHeader, ModalBody, FormGroup, Label, Container, Row } from "reactstrap";
 import { Formik, Field, Form, ErrorMessage } from 'formik';
-import { validateLoginForm } from "../utils/validateLoginForm";
-
 
 const LoginForm = () => {
     const [modalOpen, setModalOpen] = useState(false);
-    const [userNameShow, showUsername] =useState('');
-    const [isShown,setIsShown]=useState(false);
-    const [message, setMessage] = useState('');
-
-    
-    const handleSubmit = (values) => {
-        const login = {
-            userName: values.userName,
-            userPassword: values.userPassword
-
-        };
-        const userNameInput= login.userName;
-
-        setIsShown(current => !current);
-        setMessage(userNameInput);
-        // const {userNameInput, userPasswordInput}=login;
-        // const userNameInput= login.userName;
-
-        console.log(login);
-        console.log(userNameInput,'input');
-        setModalOpen(false);
-    }
 
     return (
-        <>  
-            <span style={{backgroundColor:'none', color:'#fefae0', border:'none', textDecoration:'none', maxHeight:'100%' }}  outline onClick={() => setModalOpen(true)} ><i className="fa fa-sign-in fa-lg"  /> Login </span>
-                <Container>
-                {isShown && ( <><h2 style={{fontSize:'1vw',}} >{` Welcome ${message}`}</h2></>) }
-                </Container>
+        <>
+            {/* <span style={{backgroundColor:'none', color:'black', border:'2px rounded solid black', borderRadius: '10px', textDecoration:'none', maxHeight:'100%' }}  outline onClick={() => setModalOpen(true)} ><i className="fa fa-sign-in fa-lg"  /> Contact Me </span> */}
+            <Button style={{ backgroundColor: '#FFE8D6', border: '2px solid black' }} className='fontBasic'
+                onClick={() => setModalOpen(true)}>Contact <i className="fa fa-sign-in fa-lg" /></Button>
             <Modal isOpen={modalOpen}>
                 <ModalHeader toggle={(() => setModalOpen(false))} >
-                    Login Here
+                    Let's Talk
                 </ModalHeader>
                 <ModalBody>
-                    <Formik initialValues={{ userName: '', userPassword: '' }} onSubmit={handleSubmit} validate={validateLoginForm}>
+                    <Formik >
                         <Form>
-
+                            
                             <FormGroup>
-                                <Label htmlFor='userName'>
-                                    User Name
+                                <Label>
+                                    Email:
                                 </Label>
-                                <Field
-                                    name='userName'
-                                    placeholder='User Name'
-                                    className='form-control'
-                                />
-                                <ErrorMessage name='userName'>
-                                    {(msg) => <p className='text-danger'>{msg}</p>}
-                                </ErrorMessage>
+                                <Label>
+                                    <a role='link' className='btn btn-link NoDecorationCardText unstyleLink inline' href='mailto:matthew.mcbee7@gmail.com'>
+                                        <i className='fa fa-envelope-o NoDecorationCardText unstyleLink' />Matthew.Mcbee7@gmail.com
+                                    </a>
+                                </Label>
                             </FormGroup>
                             <FormGroup>
-                                <Label htmlFor='userPassword'>
-                                    Password
+                                <Label>
+                                    Phone Number:
                                 </Label>
-                                <Field
-                                    name='userPassword'
-                                    placeholder='User Password'
-                                    className='form-control'
-                                />
-                                <ErrorMessage name='userPassword'>
-                                    {(msg) => <p className='text-danger'>{msg}</p>}
-                                </ErrorMessage>
+                                <Label>
+                                    <a role='link' className='btn btn-link NoDecorationCardText unstyleLink inline' href='tel:+15403306288'>
+                                        <i className='fa fa-phone-o NoDecorationCardText unstyleLink' />540-330-6288
+                                    </a>
+                                </Label>
                             </FormGroup>
-                           
-                            <Button type='submit' color='primary'>
-                                Submit
-                            </Button>
                         </Form>
                     </Formik>
                 </ModalBody>

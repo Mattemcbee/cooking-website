@@ -5,7 +5,7 @@ import {
   filterIngredientsByTrue,
   filterObj,
 } from "./MealsSlice";
-import MealCard from "./MealsCard";
+import MealCard from "./ServiceCard";
 import IngredientSelection from "./IngredientSelection";
 
 const IngredientListAll = (props) => {

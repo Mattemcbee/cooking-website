@@ -1,6 +1,7 @@
 import { RECIPES } from "../../app/shared/RECIPES";
 import { INGREDIENTS } from "../../app/shared/INGREDIENTLIST.js";
 import stringArrayPush from "../recipes/RecipeFilterFromCheck";
+import { PROJECTS } from "../../app/shared/PROJECTS";
 import { addRecipe } from "../recipes/AddRecipeSlice";
 import { selectNewRecipe } from "../recipes/AddRecipeSlice";
 import { initialState } from "../recipes/AddRecipeSlice";
@@ -60,7 +61,7 @@ export const filterIngredientsByTrue = () => {
 // console.log(filterIngredientsByTrue,'bytrue')
 
 export const selectMealById = (id) => {
-  return RECIPES.find((meal) => meal.id === parseInt(id));
+  return PROJECTS.find((meal) => meal.id === parseInt(id));
 };
 
 

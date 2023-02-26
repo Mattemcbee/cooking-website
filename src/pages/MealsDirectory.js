@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import MealsSlice from '../features/meals/MealsSlice';
-import MealsList from '../features/meals/MealsList';
+import MealsList from '../features/meals/ServiceList';
 
 const MealsDirectoryPage = () =>{
     

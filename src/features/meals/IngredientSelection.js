@@ -17,7 +17,7 @@ import {
   import { Formik, Field, Form, ErrorMessage } from "formik";
   import stringArrayPush from "../recipes/RecipeFilterFromCheck";
   import { filterIngredientsByTrue } from "./MealsSlice";
-  import MealsList from "./MealsList";
+  import MealsList from "./ServiceList";
   
   const IngredientSelection = (props) => {
     // const IngredientSelection = ({ list }) => {

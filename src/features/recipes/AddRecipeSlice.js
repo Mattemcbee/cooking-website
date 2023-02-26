@@ -105,9 +105,30 @@ export const selectIngLength = (filteredIngredients) => (state) => {
             return false;
         });
         // const heck=filteredRecipes[0].ingredients.length;
+        // const heckAll=()=> {
+        //     const heck3;
+        //     const heck2;
+        //     const heck1;
+        //     const heck0;
+        //     if (filteredRecipes[3]) {
+        //         const heck3=filteredRecipes[3],
+        //         const heck2=filteredRecipes[2],
+        //         const heck1=filteredRecipes[1],
+        //         const heck0=filteredRecipes[0],
+        //     } else if (filteredRecipes[2]) {
+        //         const heck2=filteredRecipes[2],
+        //         const heck1=filteredRecipes[1],
+        //         const heck0=filteredRecipes[0],
+        //     } else if (filteredRecipes[1]) {
+        //         const heck1=filteredRecipes[1],
+        //         const heck0=filteredRecipes[0],
+        //     } else if (filteredRecipes[0]) {
+        //         const heck0=filteredRecipes[0],
+        //     }  
+        // }
         const heck=filteredRecipes[0].ingredients.length;
 
-        const help=()=> filteredRecipes.map(heck=>heck.ingredients)
+        // const help=()=> filteredRecipes.map(heck=>heck.ingredients)
     console.log(filteredRecipes[0].ingredients.length,'filtered recipes')
     console.log(heck,'heck')
 

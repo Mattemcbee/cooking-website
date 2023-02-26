@@ -17,9 +17,10 @@ h3,
 }
 
 .cardStyle {
-    background-color: #606c38;
+    background-color: #B7B7A4;
+    /* outline: 1px solid black; */
     text-decoration: none;
-    color: #fefae0;
+    color: black;
     margin-left: 0;
 }
 
@@ -116,12 +117,23 @@ h1 {
     right: 0;
 
 }
-.loginButton {
-    
+.button1 {
+    background-color: none;
+    color: black;
+    border: 2px solid black;
+  } 
+.fontBasic {
+    color: black;
+
+}
+.homeBackground {
+    background-color: #FFE8D6;
 }
 
-.homeBackground {
-    background-color: #a1cebe;
+.homeBackground2 {
+    /* background-color: red; */
+    background-image: url("../src/app/assets/img/mountain1.jpg");
+    height: 100px;
 }
 .recipeBackground {
     background-color: #fefae0;
@@ -157,8 +169,7 @@ h1 {
 }
 
 .navbar-dark {
-    background-color: #a1cebe;
-    //background-image: linear-gradient(to right, #5637dd, #3046c5, #510e5a);
+    background-color: #FFE8D6;
     margin-bottom: 0;
     min-height: 8rem;
 }
