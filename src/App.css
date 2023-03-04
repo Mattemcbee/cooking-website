@@ -21,7 +21,7 @@ h3,
     /* outline: 1px solid black; */
     text-decoration: none;
     color: black;
-    margin-left: 0;
+    /* margin-left: 0; */
 }
 
 .iconColor {
@@ -81,11 +81,9 @@ h3,
 }
 
 h2 {
-    color: #fefae0;
     font-size: 22vw;
 }
 h4 {
-    color: #fefae0;
     font-size: 2vw;
 }
 
@@ -124,7 +122,6 @@ h1 {
   } 
 .fontBasic {
     color: black;
-
 }
 .homeBackground {
     background-color: #FFE8D6;

@@ -1,5 +1,7 @@
 import { Col, Container, Row, Button, Image, Card, CardImg, CardText, CardBody } from "reactstrap";
 import bagel from '../../../src/app/assets/img/bagel.png';
+import head from '../../../src/app/assets/img/head.jpg';
+
 import { Link } from 'react-router-dom';
 
 
@@ -18,35 +20,24 @@ const AboutMe = () => {
   return (
 
     <Row className="ms-auto">
-              <h2 className='cardStyle'>About Me</h2>
-
+      <h2 className='cardStyle'>About Me</h2>
+<Container>
+  <Row>
       <Col sm="2" className="">
-        <Card className=''>
-          <CardImg top src={bagel} />
-
-        </Card>
+          <img  style={{borderRadius :"50%", backgroundColor:"red", width: '100%'}}  top src={head} />
       </Col >
 
 
-      <Col sm="10">
-        <h2 className='fontBasic'>My name is Matt</h2>
-        <ul className='list-unstyled fontBasic'>
-                            <li>
-                                <h2 className='fontBasic'>Home</h2>
-                            </li>
-                            <li>
-                                <h2 className='fontBasic'>homie</h2>
-                            </li>
-                            <li>
-                                <h2 className='fontBasic'>heck</h2>
-                            </li>
-                            <li>
-                                <h2 className='fontBasic'>dang</h2>
-                            </li>
-                        </ul>
+      <Col sm="10" className="m-auto">
+        <h2 className='fontBasic'>My name is Matt McBee</h2>
+
+        <h4 className='fontBasic'>I am a fullstack developer based in Richmond, VA, and I am passionate and dedicated to my work. With 3 years of professional work experince and 1 year of code experince I have aquired the skills necessary to build great and premium websites.</h4>
+
+
 
       </Col>
-
+      </Row>
+      </Container>
     </Row>
 
   );

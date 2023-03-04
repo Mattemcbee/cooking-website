@@ -12,23 +12,16 @@ const HomePage = () => {
 
   return (
     <Container fluid className="homeBackground">
-      <Header/>
+      <Header />
       <Row>
-        {/* <Row fluid className="homeBackground2">
-          <Col xs="10"><h4 className=" fontBasic">Matt McBee</h4></Col>
-          <Col xs="2">
-            <LoginForm />
-          </Col>
-        </Row> */}
-
         <Col sm="12">
           <Container className="">
             <AboutMe />
           </Container>
         </Col>
         <Col
-          sm="size: 12"
-          className=" text-center"
+          sm="9"
+          className=" m-auto"
         >
           <h1 className="cardStyle mx-0">My Services</h1>
           <ServiceList />
@@ -49,7 +42,7 @@ const HomePage = () => {
             rel="noreferrer">
             Resume
           </a> <br></br></h3>
-          
+
 
 
 

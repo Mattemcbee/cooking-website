@@ -13,7 +13,7 @@ const ServiceList = () => {
       {SKILLS.map((meal) => {
         return (
           <>
-            <Col md="6" className="" key={meal.id}>
+            <Col md={{ size: 4, offset: 1 }} className="" key={meal.id}>
               <ServiceCard meal={meal} />
             </Col>
           </>

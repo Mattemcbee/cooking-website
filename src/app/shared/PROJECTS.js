@@ -5,7 +5,7 @@ export const PROJECTS = [
     {
         id: 0,
         name: 'Bootstrap',
-        disc: 'band page',
+        disc: 'Use  of HTML, JS, CSS to build a landing page for a local band to display music, merch and upcoming shows',
         image: bread,
         imageDisc:'bread',
         image2: ramen,
@@ -15,7 +15,7 @@ export const PROJECTS = [
     {
         id: 1,
         name: 'React',
-        disc: 'recipe webpage',
+        disc: 'Use of react to build an interac',
         image: bread,
         imageDisc:'bread',
         image2: ramen,
